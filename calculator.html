@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="calculator.css" type="text/css">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1>This is calculator javascript</h1>
+    <form name="myform">
+
+<input type="text" name="n1" placeholder="Number-1"><br>
+<input type="text" name="n2" placeholder="Number-2"><br>
+
+
+<input type="button" value="add" onclick="add()">
+<input type="button" value="Subtract" onclick="subtract()">
+<input type="button" value="Divide" onclick="divide()">
+<input type="button" value="Multiply" onclick="multiply()"> <br>
+<input type="text" name="result">
+
+
+</form>
+  </div>
+
+  <script type="text/javascript">
+
+  function add (){
+  n1=parseInt(myform.n1.value);
+  n2=parseInt(myform.n2.value);
+  result=n1+n2;
+  myform.result.value=result;
+  }
+
+  function subtract (){
+  n1=parseInt(myform.n1.value);
+  n2=parseInt(myform.n2.value);
+  result=n1-n2;
+  myform.result.value=result;
+  }
+
+  function divide (){
+  n1=parseInt(myform.n1.value);
+  n2=parseInt(myform.n2.value);
+  result=n1/n2;
+  myform.result.value=result;
+  }
+
+  function multiply (){
+  n1=parseInt(myform.n1.value);
+  n2=parseInt(myform.n2.value);
+  result=n1*n2;
+  myform.result.value=result;
+  }
+
+  </script>
+</body>
+</html>
